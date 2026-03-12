@@ -8,7 +8,9 @@
 
 ## 关于本项目
 
-本项目是对游戏**《偶像大师 闪耀色彩》（THE iDOLM@STER Shiny Colors）**中偶像组合 **noctchill** 四位成员的系统性剧情分析与文学评论。
+本项目是对游戏 **《偶像大师闪耀色彩》（THE iDOLM@STER Shiny Colors）** 中偶像组合 **noctchill** 四位成员的系统性剧情分析与文学评论。
+
+初期文本使用 gemini 3 pro 生成，后续使用 claude opus-4.6 进行润色整理。
 
 noctchill 由以下四人组成：
 
