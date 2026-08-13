@@ -1,0 +1,17 @@
+{
+  "id": "0bb46178-8c69-47b0-b176-6fee1a74319d",
+  "scriptName": "noctchill⑤·择·外框",
+  "findRegex": "/<择>([\\s\\S]*?)<\\/择>/g",
+  "replaceString": "<div class=\"nc-c\"><div class=\"nc-ct\">可以这样接</div>$1</div>",
+  "trimStrings": [],
+  "placement": [
+    2
+  ],
+  "disabled": false,
+  "markdownOnly": true,
+  "promptOnly": false,
+  "runOnEdit": true,
+  "substituteRegex": 0,
+  "minDepth": null,
+  "maxDepth": null
+}

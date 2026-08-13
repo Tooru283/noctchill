@@ -1,0 +1,17 @@
+{
+  "id": "650f53fb-65fa-4319-be36-3790d8bfb209",
+  "scriptName": "noctchill⑦·择·条目(无反应兜底)",
+  "findRegex": "/^[\\s>*\\-\\[]*([1-9])[\\.、)．]\\s*([^\\n\\]]+)\\]?\\s*$/gm",
+  "replaceString": "<div class=\"nc-o\"><span class=\"nc-on\">$1</span><span class=\"nc-ob\"><span class=\"nc-oa\">$2</span></span></div>",
+  "trimStrings": [],
+  "placement": [
+    2
+  ],
+  "disabled": false,
+  "markdownOnly": true,
+  "promptOnly": false,
+  "runOnEdit": true,
+  "substituteRegex": 0,
+  "minDepth": null,
+  "maxDepth": null
+}

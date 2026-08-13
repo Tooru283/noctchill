@@ -1,0 +1,17 @@
+{
+  "id": "4376aecf-1f23-4bfc-bf4d-7056a786def3",
+  "scriptName": "noctchill⑧·剥离历史区块",
+  "findRegex": "/<(场|择)>[\\s\\S]*?<\\/\\1>\\s*/g",
+  "replaceString": "",
+  "trimStrings": [],
+  "placement": [
+    2
+  ],
+  "disabled": false,
+  "markdownOnly": false,
+  "promptOnly": true,
+  "runOnEdit": true,
+  "substituteRegex": 0,
+  "minDepth": 2,
+  "maxDepth": null
+}

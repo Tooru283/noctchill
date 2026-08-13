@@ -1,0 +1,242 @@
+{
+  "chat_completion_source": "deepseek",
+  "deepseek_model": "deepseek-v4-flash",
+  "claude_model": "claude-sonnet-5",
+  "openai_model": "gpt-4o",
+  "openrouter_model": "deepseek/deepseek-v4-flash",
+  "temperature": 0.95,
+  "frequency_penalty": 0.05,
+  "presence_penalty": 0.05,
+  "top_p": 0.95,
+  "top_k": 0,
+  "top_a": 1,
+  "min_p": 0,
+  "repetition_penalty": 1,
+  "openai_max_context": 200000,
+  "openai_max_tokens": 1600,
+  "max_context_unlocked": true,
+  "wrap_in_quotes": false,
+  "names_behavior": 0,
+  "send_if_empty": "",
+  "impersonation_prompt": "[以 {{user}}（制作人）的口吻写下一步。第一人称，简短，只写 {{user}} 做了什么说了什么，不描写她的反应，不推进剧情结果。]",
+  "new_chat_prompt": "[新场景开始]",
+  "new_group_chat_prompt": "[新场景开始]",
+  "new_example_chat_prompt": "[示例对话开始]",
+  "continue_nudge_prompt": "[从上次中断处直接续写，不要重复已写过的内容，不要重新开头。]",
+  "group_nudge_prompt": "[接下来由 {{char}} 发言。]",
+  "bias_preset_selected": "Default (none)",
+  "wi_format": "{0}",
+  "scenario_format": "【当前处境】{{scenario}}",
+  "personality_format": "【{{char}}】{{personality}}",
+  "stream_openai": true,
+  "squash_system_messages": true,
+  "assistant_prefill": "",
+  "human_sysprompt_message": "",
+  "continue_postfix": "",
+  "function_calling": false,
+  "show_thoughts": false,
+  "reasoning_effort": "none",
+  "enable_web_search": false,
+  "request_images": false,
+  "image_inlining": false,
+  "inline_image_quality": "low",
+  "seed": -1,
+  "n": 1,
+  "prompts": [
+    {
+      "identifier": "main",
+      "name": "主提示·叙事契约",
+      "system_prompt": true,
+      "role": "system",
+      "content": "你正在驱动一场以《偶像大师 闪耀色彩》noctchill 为背景的长篇文字角色扮演。{{user}} 是 283 Production 的制作人。\n\n# 你负责什么\n· 环境、场景、时间推进\n· {{char}} 与其他 NPC 的言行\n· 世界在 {{user}} 不在场时的自主演进\n\n# 你绝对不做什么\n· 不描写 {{user}} 的动作、台词、心理、感受或决定。\n· **不写 {{char}} 的内心独白。** 情绪只能靠动作、停顿、视线、和她做了什么/没做什么透出来。她想说没说的那句，只能放进场景块的「未言」栏。\n· 不在结尾询问\"你打算怎么做\"。场景自然停在一个有张力的位置。\n· 不做总结陈词，不升华，不预告后续。\n· 不替她说明她的心情。她不解释自己，你也不要替她解释。\n\n# 这个故事是什么\n日常。没有大事件，没有目标，没有要克服的困难。一幕就是一幕。\n它的质感来自具体的东西：窗开着没人去关、地板是凉的、便利店的白光、电车最后一节车厢、三月的风。\n四个人各有各的怪，凑在一起也不总是和睦，但没有散。\n\n# 她们不吃什么\n说教、励志话术、\"你要相信自己\"、\"大家都在为你着想\"。\n{{user}} 能做的只有三件事：在场、接住、不撒谎。",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "forbid_overrides": false,
+      "marker": false
+    },
+    {
+      "identifier": "nc_style",
+      "name": "文风与区块",
+      "system_prompt": false,
+      "role": "system",
+      "content": "# 文风\n\n· 台词用「日文原文」，紧跟全角括号中译。叙述、动作、场景一律中文。\n· 日文必须符合该角色的一人称与口调（见角色卡与世界书）。写通用日语等于写崩。\n· 短句为主。少形容词。一个精确的动作胜过三个修饰语。\n· 段落不超过四行。单次回复 250—400 字。\n· 停顿、沉默、没做的动作，和台词一样重要。这四个人的戏大半在没说出口的地方。\n\n# 环境细节\n每次回复至少嵌一个具体的物理细节：窗帘被风鼓起来的形状、拉链拉到一半停住、水瓶在地上滚、吸管见底的空气声、鞋尖离屋檐外沿几厘米。\n细节要服务于此刻的气压，不要堆砌。\n\n# 严禁的套话\n\"眼中闪过一丝……\" \"嘴角勾起一抹……\" \"空气仿佛凝固\" \"不易察觉地\" \"心中一凛\" \"瞳孔骤缩\"\n\"仿佛整个世界都安静了\" \"某种难以言喻的情绪\" \"一股暖流涌上心头\" \"她知道，从这一刻起……\"\n\n# 每轮末尾的两个区块\n正文之后依次输出「择」与「场」。完整模板、字段与写法，以世界书条目「★N3 输出格式」为准——那是唯一真源，严格照它执行，不要自行增删字段。",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "forbid_overrides": false,
+      "marker": false
+    },
+    {
+      "identifier": "worldInfoBefore",
+      "name": "World Info (before)",
+      "system_prompt": true,
+      "marker": true
+    },
+    {
+      "identifier": "personaDescription",
+      "name": "Persona Description",
+      "system_prompt": true,
+      "marker": true
+    },
+    {
+      "identifier": "charDescription",
+      "name": "Char Description",
+      "system_prompt": true,
+      "marker": true
+    },
+    {
+      "identifier": "charPersonality",
+      "name": "Char Personality",
+      "system_prompt": true,
+      "marker": true
+    },
+    {
+      "identifier": "scenario",
+      "name": "Scenario",
+      "system_prompt": true,
+      "marker": true
+    },
+    {
+      "identifier": "worldInfoAfter",
+      "name": "World Info (after)",
+      "system_prompt": true,
+      "marker": true
+    },
+    {
+      "identifier": "dialogueExamples",
+      "name": "Chat Examples",
+      "system_prompt": true,
+      "marker": true
+    },
+    {
+      "identifier": "chatHistory",
+      "name": "Chat History",
+      "system_prompt": true,
+      "marker": true
+    },
+    {
+      "identifier": "nc_final",
+      "name": "文风终检(历史后)",
+      "system_prompt": false,
+      "role": "system",
+      "content": "[最终校验：台词「日文」＋（中文），叙述中文。正文不写内心独白。不替 {{user}} 决定任何事，不在结尾发问，不总结不升华。250—400 字。\n末尾依次附「择」（三条 `1. 行动 ／ 反应`）与「场」（五行 `时：/所：/人：/空气：/未言：`）。**字段名严格照抄，不许自创「可见」「顿」「路」这类新字段。**]",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "forbid_overrides": false,
+      "marker": false
+    },
+    {
+      "identifier": "jailbreak",
+      "name": "历史后指令(留给角色卡)",
+      "system_prompt": true,
+      "marker": true
+    }
+  ],
+  "prompt_order": [
+    {
+      "character_id": 100000,
+      "order": [
+        {
+          "identifier": "main",
+          "enabled": true
+        },
+        {
+          "identifier": "nc_style",
+          "enabled": true
+        },
+        {
+          "identifier": "worldInfoBefore",
+          "enabled": true
+        },
+        {
+          "identifier": "personaDescription",
+          "enabled": true
+        },
+        {
+          "identifier": "charDescription",
+          "enabled": true
+        },
+        {
+          "identifier": "charPersonality",
+          "enabled": true
+        },
+        {
+          "identifier": "scenario",
+          "enabled": true
+        },
+        {
+          "identifier": "worldInfoAfter",
+          "enabled": true
+        },
+        {
+          "identifier": "dialogueExamples",
+          "enabled": true
+        },
+        {
+          "identifier": "chatHistory",
+          "enabled": true
+        },
+        {
+          "identifier": "nc_final",
+          "enabled": true
+        },
+        {
+          "identifier": "jailbreak",
+          "enabled": false
+        }
+      ]
+    },
+    {
+      "character_id": 100001,
+      "order": [
+        {
+          "identifier": "main",
+          "enabled": true
+        },
+        {
+          "identifier": "nc_style",
+          "enabled": true
+        },
+        {
+          "identifier": "worldInfoBefore",
+          "enabled": true
+        },
+        {
+          "identifier": "personaDescription",
+          "enabled": true
+        },
+        {
+          "identifier": "charDescription",
+          "enabled": true
+        },
+        {
+          "identifier": "charPersonality",
+          "enabled": true
+        },
+        {
+          "identifier": "scenario",
+          "enabled": true
+        },
+        {
+          "identifier": "worldInfoAfter",
+          "enabled": true
+        },
+        {
+          "identifier": "dialogueExamples",
+          "enabled": true
+        },
+        {
+          "identifier": "chatHistory",
+          "enabled": true
+        },
+        {
+          "identifier": "nc_final",
+          "enabled": true
+        },
+        {
+          "identifier": "jailbreak",
+          "enabled": false
+        }
+      ]
+    }
+  ]
+}

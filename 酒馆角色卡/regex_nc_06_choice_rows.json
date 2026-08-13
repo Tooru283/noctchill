@@ -1,0 +1,17 @@
+{
+  "id": "3da20fb0-b51d-447a-b2bc-97afb24e11ea",
+  "scriptName": "noctchill⑥·择·条目",
+  "findRegex": "/^[\\s>*\\-\\[]*([1-9])[\\.、)．\\|｜]\\s*([^\\n]+?)\\s*(?:／|\\/|｜|\\||——|—)\\s*([^\\n\\]]+)\\]?\\s*$/gm",
+  "replaceString": "<div class=\"nc-o\"><span class=\"nc-on\">$1</span><span class=\"nc-ob\"><span class=\"nc-oa\">$2</span><div class=\"nc-or\">$3</div></span></div>",
+  "trimStrings": [],
+  "placement": [
+    2
+  ],
+  "disabled": false,
+  "markdownOnly": true,
+  "promptOnly": false,
+  "runOnEdit": true,
+  "substituteRegex": 0,
+  "minDepth": null,
+  "maxDepth": null
+}

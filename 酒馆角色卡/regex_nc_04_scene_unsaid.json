@@ -1,0 +1,17 @@
+{
+  "id": "71040278-6c9d-4c91-af1e-fb9876edc5a6",
+  "scriptName": "noctchill④·场·未言",
+  "findRegex": "/^[\\s>*\\-\\[]*未言[：:｜|]\\s*([^\\]\\n]+)\\]?\\s*$/gm",
+  "replaceString": "<div class=\"nc-un\"><i>未言</i>$1</div>",
+  "trimStrings": [],
+  "placement": [
+    2
+  ],
+  "disabled": false,
+  "markdownOnly": true,
+  "promptOnly": false,
+  "runOnEdit": true,
+  "substituteRegex": 0,
+  "minDepth": null,
+  "maxDepth": null
+}

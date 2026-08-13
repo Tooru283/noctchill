@@ -1,0 +1,17 @@
+{
+  "id": "b9e45972-e168-4d97-ae7f-833733a0a7c3",
+  "scriptName": "noctchill①·场·外框",
+  "findRegex": "/<场>([\\s\\S]*?)<\\/场>/g",
+  "replaceString": "<style>.nc-w{margin-top:13px;padding:9px 0 2px;border-top:1px solid rgba(140,160,190,.16);font-family:ui-monospace,Menlo,'Microsoft YaHei',sans-serif;font-size:.79em;line-height:1.75;display:flex;flex-wrap:wrap;gap:0 16px}.nc-k{color:#6f7c8f;white-space:nowrap}.nc-k i{font-style:normal;color:#4b5563;margin-right:6px;letter-spacing:1px}.nc-k b{font-weight:500;color:#96a6ba}.nc-air{flex:1 0 100%;margin-top:4px;color:#5f6b7c;font-style:italic}.nc-un{flex:1 0 100%;margin-top:6px;padding-left:11px;border-left:2px solid rgba(186,140,150,.32);color:#8d7480;line-height:1.65}.nc-un i{font-style:normal;letter-spacing:2px;color:#6d565e;margin-right:9px;font-size:.9em}.nc-c{margin-top:13px;padding:8px 0 2px;border-top:1px solid rgba(150,175,140,.16);font-family:ui-monospace,Menlo,'Microsoft YaHei',sans-serif;font-size:.81em;line-height:1.6}.nc-ct{color:#7f9472;letter-spacing:3px;font-size:.82em;margin-bottom:5px}.nc-o{display:flex;gap:9px;padding:3px 0}.nc-on{color:#8fae7a;font-weight:700;min-width:1.1em}.nc-ob{flex:1}.nc-oa{color:#c5ced8}.nc-or{color:#6a747f;font-size:.91em;margin-top:1px}</style><div class=\"nc-w\">$1</div>",
+  "trimStrings": [],
+  "placement": [
+    2
+  ],
+  "disabled": false,
+  "markdownOnly": true,
+  "promptOnly": false,
+  "runOnEdit": true,
+  "substituteRegex": 0,
+  "minDepth": null,
+  "maxDepth": null
+}

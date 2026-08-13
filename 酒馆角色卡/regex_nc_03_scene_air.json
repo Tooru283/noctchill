@@ -1,0 +1,17 @@
+{
+  "id": "2ec13703-e364-4e11-8da1-72a2f4e0411a",
+  "scriptName": "noctchill③·场·空气",
+  "findRegex": "/^[\\s>*\\-\\[]*(?:空气|空氣)[：:｜|]\\s*([^\\]\\n]+)\\]?\\s*$/gm",
+  "replaceString": "<div class=\"nc-air\">$1</div>",
+  "trimStrings": [],
+  "placement": [
+    2
+  ],
+  "disabled": false,
+  "markdownOnly": true,
+  "promptOnly": false,
+  "runOnEdit": true,
+  "substituteRegex": 0,
+  "minDepth": null,
+  "maxDepth": null
+}

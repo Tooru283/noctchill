@@ -1,0 +1,17 @@
+{
+  "id": "9c8c6990-0d55-420e-a94c-f0d539d2f88b",
+  "scriptName": "noctchill②·场·时所人",
+  "findRegex": "/^[\\s>*\\-\\[]*(时|所|人|在场|地点|时间)[：:｜|]\\s*([^\\]\\n]+)\\]?\\s*$/gm",
+  "replaceString": "<span class=\"nc-k\"><i>$1</i><b>$2</b></span>",
+  "trimStrings": [],
+  "placement": [
+    2
+  ],
+  "disabled": false,
+  "markdownOnly": true,
+  "promptOnly": false,
+  "runOnEdit": true,
+  "substituteRegex": 0,
+  "minDepth": null,
+  "maxDepth": null
+}
